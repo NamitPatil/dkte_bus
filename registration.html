@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration</title>
+    <style>
+        /* Styles are unchanged for brevity */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home_page.html" target="_main"><button id="navbutton">Home</button></a></li>
+            <li><a href="About Us" target="_main"><button id="navbutton">About Us</button></a></li>
+            <li><a href="registration.html" target="_main"><button class="active" id="navbutton">Sign up</button></a></li>
+            <li><a href="login.html" target="_main"><button id="navbutton">User Login</button></a></li>
+            <li><a href="view_location.html" target="_main"><button id="navbutton">View Location</button></a></li>
+            <li><a href="login.html" target="_main"><button id="navbutton">Driver login</button></a></li>
+        </ul>
+    </nav>
+
+    <div class="register">
+     <h2>Registration</h2>
+    <p>Create an account to get started</p>
+    <form action="/register" method="POST">
+        <div class="target">
+            <label for="Full Name">Full Name</label>
+            <br>
+            <input type="text" id="Full name" name="username" placeholder="Enter your Fullname" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email">Email-id</label>
+            <br>
+            <input class="small" type="email" id="Email" name="email" placeholder="Enter your Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="Mobile-no">Mobile-no</label>
+            <br>
+            <input type="tel" id="Mobile-no" name="mobile" pattern="\+91\d{10}" placeholder=" +91xxxxxxxxxx" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+        </div>
+        <br>
+        <h4>Gender</h4>
+        <div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+    
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+    
+            <input type="radio" id="Other" name="gender" value="Other">
+            <label for="Other">Other</label>
+        </div>
+        <footer>
+            <input type="submit" value="Create An Account">
+        </footer>
+    </form>
+    
+    </div>
+</body>
+</html>

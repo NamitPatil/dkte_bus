@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+.active {
+    color: #ffcc00;
+}
+
+#wel {
+    text-align: center;
+    min-height: 400px;
+    width: 350px;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px #888888;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#wel h2{
+    padding-top: 6%;
+}
+.login {
+    margin-top: 25px;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    text-transform: lowercase;
+}
+
+#check {
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+footer input {
+    margin: 30px auto;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer input:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+footer input:enabled {
+    background-color: rgb(54, 54, 221);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.account {
+    margin: 20px;
+}

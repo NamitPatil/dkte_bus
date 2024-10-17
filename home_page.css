@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+#splash-screen {
+    background-color: #2874f0; /* Flipkart's blue */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash-logo {
+    width: 150px; /* Adjust as necessary */
+}
+
+/* Optional: Add a fade-out effect */
+@keyframes fadeIn {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.top_section {
+    min-height: 550px;
+    background-color: darkgoldenrod;
+    background-image: url(/WhatsApp\ Image\ 2024-08-26\ at\ 18.37.56_31a9f3f9.jpg);
+    background-size: cover;
+    background-position:center;
+    
+    /* border: 2px solid black; */
+}
+
+.logo {
+    display: inline-block;
+    margin: 20px;
+}
+
+ h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    /* color: red; */
+    font-weight: 500;
+    line-height: 1;
+}
+
+.text span{
+    text-transform: uppercase;
+}
+ 
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+.active {
+    color: #ffcc00;
+  }
+#info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.purpose{
+    padding:5%;
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+    /* background-color: rgb(121, 11, 11); */
+    /* background-image: url(transport-1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1px;
+    
+} 
+
+.purpose_content{
+    border: 1.5px solid black;
+    height: 300px;
+    width: 500px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+.purpose_content h1{
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+} 
+
+.purpose_content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+   color: white;
+   font-size: 1.4em;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+
+.registration{
+    padding-left: 600px;  
+    padding-bottom: 30px;
+}
+
+.registration button{
+
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #907d9f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1.3px solid white;
+}
+
+.registration button:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+.btn{
+    padding-left: 45%;
+    padding-bottom: 5%;
+}
+ .blue-btn a{
+   color: rgb(0, 0, 0);
+   text-decoration:none;
+   text-align: center;
+   display:block; /* important */
+ }
+ 
+ .blue-btn, .first-link{
+   -webkit-transition: 0.3s;
+   -moz-transition: 0.3s;
+   -ms-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;     
+ }
+ 
+ 
+ .blue-btn{
+   height: 44px;
+   font: normal normal 530 1em/3em Arial,sans-serif;
+   overflow: hidden;
+   width: 150px;
+   background-color: #67b8e7;
+   border-radius: 20px;
+ }
+ 
+ .blue-btn:hover{
+    background-color: #67b8e7;
+   
+ }
+ 
+ .blue-btn a:hover{
+   text-decoration: none;
+ }
+ 
+ .first-link{
+   margin-top: 0em;   
+ }
+ .second-link{
+    margin-top: 0em;
+ }
+ .blue-btn:hover .first-link{
+   margin-top: -3em;
+ }
+
+
+.title_container {
+    padding: 40px 20px;
+    min-height: 100px;
+    background-color: rgb(156, 125, 125);
+}
+
+.text{
+    font-weight: bold;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.para{
+    margin-top: 15px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: larger;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 20px 0; /* top and bottom margin is 20px left and right is 0px*/
+    justify-items: center;
+    align-items: center;
+}
+
+#border_radius{
+    max-width: 320px; /* this width is from grid template columns*/
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.25s ease-in-out;
+}
+
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AcademicproBlock{
+    box-shadow: 3px 5px 5px rgba(1,1,1, 0.2);
+    margin-bottom: 20px;
+}
+
+.center{
+    padding: 30px;
+    font-size: 20px;
+}
+
+.grid_item:hover{
+    transform: scale(1.04);
+    transition: 0.25s ease-in-out;
+}
+
+/* .rows{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+} */
+
+.rows{
+    width: 90%;
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Academic_facility{
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
+}
+
+#b_r{
+    /* display: block; */
+    border-radius: 20px;
+}
+
+#b_r:hover{
+    transform: scale(1.07);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.small_heading{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.footer{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: burlywood;
+}
+.footer img{
+    padding-left: 60px; 
+}
+
+.footer p{
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Styling the title (h1) */
+.titl {
+    padding-top: 200px;
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #203021; /* Green text */
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Styling the Share button */
+.share-btn {
+padding-top: 20px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Button shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on button */
+.share-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);    /* Slightly increase size on hover */
+}
+
+/* Button active state */
+.share-btn:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+
